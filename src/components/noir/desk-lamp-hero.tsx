@@ -244,7 +244,7 @@ export default function DeskLampHero() {
               </span>
             </div>
             <div className="font-typewriter text-xs tracking-[0.35em] text-[var(--sepia)]">
-              CRIMSON ROOM · EST. 17/02/2002
+              CRIMSON ROOM · EST. 17/02/2004
             </div>
           </div>
           <nav className="hidden gap-8 font-typewriter text-xs tracking-[0.25em] text-[var(--sepia)] md:flex">

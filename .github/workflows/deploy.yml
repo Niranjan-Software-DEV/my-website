@@ -1,4 +1,4 @@
-name: CI/CD Pipeline - Deploy to Vercel
+name: CI/CD Pipeline - Bun & Next.js
 
 on:
   push:
@@ -9,7 +9,8 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  ci-build-and-test:
+    name: Build, Lint & Test (Bun)
     runs-on: ubuntu-latest
 
     steps:
@@ -37,13 +38,3 @@ jobs:
         run: bun run build
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL || 'file:./dev.db' }}
-
-      - name: Deploy to Vercel
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: |
-          npx vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
-          npx vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
-          npx vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
-        env:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
