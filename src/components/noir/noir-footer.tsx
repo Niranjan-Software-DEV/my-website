@@ -26,7 +26,7 @@ export default function NoirFooter() {
                   The Crimson Room
                 </div>
                 <div className="font-typewriter text-[10px] tracking-[0.25em] text-[var(--sepia)]">
-                  EST. 2002 · BLACKMORE
+                  EST. 17/02/2002 · BLACKMORE
                 </div>
               </div>
             </div>
