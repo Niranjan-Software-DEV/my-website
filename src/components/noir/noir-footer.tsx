@@ -26,7 +26,7 @@ export default function NoirFooter() {
                   The Crimson Room
                 </div>
                 <div className="font-typewriter text-[10px] tracking-[0.25em] text-[var(--sepia)]">
-                  EST. 1947 · BLACKMORE
+                  EST. 2002 · BLACKMORE
                 </div>
               </div>
             </div>
@@ -55,7 +55,7 @@ export default function NoirFooter() {
         {/* guestbook line */}
         <div className="mt-10 flex flex-col items-start justify-between gap-4 border-t border-[var(--paper-edge)]/10 pt-6 sm:flex-row sm:items-center">
           <div className="font-typewriter text-[10px] tracking-[0.2em] text-[var(--sepia)]">
-            © 1947–{new Date().getFullYear()} THE CRIMSON ROOM · ALL THREADS LEAD
+            © 2002–{new Date().getFullYear()} THE CRIMSON ROOM · ALL THREADS LEAD
             SOMEWHERE
           </div>
           <button

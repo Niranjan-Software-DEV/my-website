@@ -371,7 +371,7 @@ function StampCTA({
           </div>
           <div className="mt-3 flex items-center justify-center gap-2 font-typewriter text-[9px] tracking-[0.3em] text-[var(--blood)]/80">
             <span className="h-px w-6 bg-[var(--blood)]/60" />
-            CRIMSON ROOM · 1947
+            CRIMSON ROOM · 2002
             <span className="h-px w-6 bg-[var(--blood)]/60" />
           </div>
         </div>
